@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 30px 15px;
+}    
+
+.group_1 {
+    background-color: green;
+}
+
+.group_2{
+    background-color: blue;
+}
+
+.group_3{
+    background-color: red;
+}
+
+.parent div{
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 567px) {
+    .parent{
+        flex-direction: column;
+        gap: 2em;
+        padding: 2em 0em;
+    }
+
+    .parent div{
+        width: 200pxm;
+    }
+}
